@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "3d776278-65a0-46f4-ae3b-e432aa5b3ce4",
+		"name": "FillerAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Новая игра",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://filler/api/game?width=&height=",
+					"protocol": "http",
+					"host": [
+						"filler"
+					],
+					"path": [
+						"api",
+						"game"
+					],
+					"query": [
+						{
+							"key": "width",
+							"value": ""
+						},
+						{
+							"key": "height",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ход в игре",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://filler/api/game?gameId=&playerId=&color=",
+					"protocol": "http",
+					"host": [
+						"filler"
+					],
+					"path": [
+						"api",
+						"game"
+					],
+					"query": [
+						{
+							"key": "gameId",
+							"value": ""
+						},
+						{
+							"key": "playerId",
+							"value": ""
+						},
+						{
+							"key": "color",
+							"value": ""
+						},
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Текущее состояние игры",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://filler/api/game?gameId=",
+					"protocol": "http",
+					"host": [
+						"filler"
+					],
+					"path": [
+						"api",
+						"game"
+					],
+					"query": [
+						{
+							"key": "gameId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
