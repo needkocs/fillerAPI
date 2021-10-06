@@ -8,13 +8,17 @@
 </p>
 
 ##Версии
+
 Laravel 8
 PHP 8.0
 MySQL 8.0-Win10
 Apache 2.4-PHP8.0
 
 ##Информация
+
 Название БД - "filler", кодировка "utf8_general_ci"
+
+
 В корне проекта находится файл "FillerAPI.postman_collection.json", чтобы проверить задания через Postman
 
 
